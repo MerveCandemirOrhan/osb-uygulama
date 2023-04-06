@@ -23,3 +23,4 @@ urlpatterns = [
     path('', ToDoListListView.as_view(), name='anasayfa'),
     path('detay/<int:pk>/', ToDoListDetailView.as_view(), name='detay'),
 ]
+    #+static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
